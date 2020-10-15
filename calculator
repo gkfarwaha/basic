@@ -1,0 +1,17 @@
+#THIS THE BASIC CALCULATOR WHICH OPTIONS TO SELECT FROM.
+print("WELCOME TO THE PYTHON CALCULATOR")
+a= int( input("enter your FIRST NO.  ", ))
+b= int(input("enter your SECOND NO.  ", ))
+print("SELECT M FOR MULTIPLICATION OF TWO NOS. \nSELECT D FOR DIVISION OF TWO NOS. \nSELECT A FOR ADDITION OF TWO NOS.\nSELECT S FOR SUBSTRACTION OF TWO NOS.")
+x=input("ENTER YOUR CHOICE ",)
+print(x)
+if x == "m" or x == "M" :
+    print(a*b)
+elif x == "d" or x == "D":
+    print(a/b)
+elif x == "A" or x == "a":
+    print(a + b)
+elif x == "s" or x == "S":
+    print(a-b)
+else:
+    print("INVALID INPUT \nKINDLY SELECT FROM THE FOLLOWING \nA: ADDITION\nS: SUBSTRACTION\nD: DIVISION\nM: MULTIPLICATION")

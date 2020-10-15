@@ -1,0 +1,17 @@
+# GET YOUR LINE PRINTED BACKWARDS
+print("Enter the string you want to print backward")
+str1 = input()
+print("String entered by you as follows\n", str1)
+print("String entered by you in upper case as follows\n", str1.upper())
+print("String entered by you in lower as follows\n", str1.lower())
+x = int(len(str1))
+print("Length of the string: ", x)
+i = x
+print(type(i))
+revstr = ""
+while i > 0:
+
+    i -= 1
+    revstr += str1[i]
+
+print(revstr)

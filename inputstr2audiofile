@@ -1,0 +1,11 @@
+from gtts import gTTS
+import os
+
+str = input("Please enter the text to convert it into audio file \n", )  # taking input from the user to convert it into audio file
+txt = str
+# txt="hello world"
+lan = 'en'
+
+output = gTTS(text=txt, lang=lan, slow=False)
+output.save("txt2sph.mp3")
+os.system("start txt2sph.mp3")

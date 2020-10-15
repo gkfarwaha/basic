@@ -1,0 +1,17 @@
+from gtts import gTTS
+import os
+
+# mytext="Text to speech conversion using python"
+# to convert file text into mp3 file output
+# create a var to handle and open the file
+fh = open("test.txt", "r")  # this variable is used to open the file,open is the function to open file,
+# hve to create test.txt file by ourslf
+mytext = fh.read().replace("\n", " ")  # varible to read the file leaving out new lines & spaces
+
+language = 'en'
+
+output = gTTS(text=mytext, lang=language, slow=False)  # gtts=google text to speech
+
+output.save("output.mp3")
+fh.close()
+os.system("start output.mp3")  # os= operating system dependent functionality, in this case it open mp3playr
